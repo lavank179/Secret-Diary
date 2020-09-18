@@ -82,7 +82,7 @@
         <textarea id="diary" class="form-control"><?php echo $diaryContent; ?></textarea>
     </div>
 <br><br><br>
-<div class="container">
+<div class="container1">
    <?php include("imgs.php"); ?>
 </div>
 

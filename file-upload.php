@@ -82,7 +82,7 @@
       <div class="modal-body">
 
 
-      <div class="container mt-5">
+      <div class="mt-5">
     <form action="" method="post" enctype="multipart/form-data" class="mb-3">
       <h3 class="text-center mb-5">Upload Multiple Images in PHP 7</h3>
 

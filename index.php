@@ -138,7 +138,7 @@
     echo '<div class="alert alert-danger" role="alert">'.$error.'</div>';
     
 } ?></div>
-<div id = "img" class= "shadow p-3 mb-5 bg-white rounded">
+<div id = "img" class= "shadow p-3 mb-5 bg-white rounded container">
     <img src="bck61.jpg">
 </div>
 

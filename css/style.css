@@ -5,24 +5,29 @@
 }
 
   #img{
-    background-image: url("bck2.jpg");
+    background-image: url(../images/bck6.jpg);
     
   }
   
 html { 
   
-  background: url(7.jpg) no-repeat center center fixed; 
+  background: url(../images/7.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-align: center;
   
   }
   
   body {
-      
-      background: none;
+
       color: #ffffff;
+      background: url(../images/7.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       
   }
   
@@ -49,13 +54,16 @@ html {
   .imgGallery img {
     padding: 8px;
     max-width: 100px;
-    }  
+    }
+    .container{
+        text-align: center;
+    }
  body{
      padding: 0;
      text-align: center;
  }
 
- .container{
+ .container1{
      display: grid;
      grid-template-columns: repeat(4,1fr);
      grid-auto-rows: auto auto;

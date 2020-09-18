@@ -14,7 +14,7 @@
 
          $ext = strtolower(pathinfo($image, PATHINFO_EXTENSION));
          if (in_array($ext, $supported_file)) { // show only image name if you want to show full path then use this code // echo $image."<br />";
-             echo '<div class="gallery-container"><div class="gallery-item"><div class="image"><img src="'.$image .'" alt="Randomimage"/></div><div class="text">'.$name .'</div></div></div>';
+             echo '<div class="gallery-container"><div class="gallery-item"><div class="image"><a href="'.$image.'" data-lightbox="mygallery" data-title="'.$name.'"><img src="'.$image .'" alt="Randomimage" data-lightbox="mygallery"/></a></div><div class="text">'.$name .'</div></div></div>';
             } else {
                 continue;
             }
