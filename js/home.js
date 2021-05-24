@@ -32,3 +32,11 @@ $(function () {
         multiImgPreview(this, 'div.imgGallery');
     });
 });
+
+function Gbtn(e) {
+    console.log(e);
+    let bnfil = e.id;
+    let bnid = e.parentElement.parentElement.parentElement.parentElement.id;
+    
+    
+}

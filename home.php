@@ -73,28 +73,51 @@ if (array_key_exists("id", $_SESSION)) {
         <div class="card-body">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link btn btn-light" id="home-tab" data-bs-toggle="tab" data-bs-target="#photos" type="button" role="tab" aria-controls="home" aria-selected="true"> Photos </a>
+              <a class="nav-link btn btn-light" id="photos-tab" data-bs-toggle="tab" data-bs-target="#photos" type="button" role="tab" aria-controls="photos" aria-selected="true"> Photos </a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link btn btn-light" id="profile-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="profile" aria-selected="false"> Videos </a>
+              <a class="nav-link btn btn-light" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false"> Videos </a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link btn btn-light" id="contact-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="contact" aria-selected="false"> Documents </a>
+              <a class="nav-link btn btn-light" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false"> Documents </a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link btn btn-light" id="contact-tab" data-bs-toggle="tab" data-bs-target="#others" type="button" role="tab" aria-controls="contact" aria-selected="false"> Others </a>
+              <a class="nav-link btn btn-light" id="others-tab" data-bs-toggle="tab" data-bs-target="#others" type="button" role="tab" aria-controls="others" aria-selected="false"> Others </a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="photos" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="photos" role="tabpanel" aria-labelledby="photos-tab">
+              <br><br>
+              <div>
+                <ul class="list-inline">
+                  <li class="list-inline-item btn btn-light">
+                    <h5 id="btnAZ" onclick="Gbtn(this);"> A - Z </h5>
+                  </li>
+                  <li class="list-inline-item btn btn-light ml-auto">
+                    <h5 id="btn1-10" onclick="Gbtn(this);"> 1 - 10... </h5>
+                  </li>
+                  <li class="list-inline-item btn btn-light">
+                    <h5> 1 - 10... </h5>
+                  </li>
+                </ul>
+              </div>
+              <div class="container1">
+                <?php include("./controllers/files/imgs.php"); ?>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
               <br><br>
               <div class="container1">
-                <?php include("./controllers/imgs.php"); ?>
-              </div>  
+                <?php include("./controllers/files/vids.php"); ?>
+              </div>
             </div>
-            <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="profile-tab"><br><br>...</div>
-            <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="contact-tab"><br><br>...</div>
-            <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="contact-tab"><br><br>...</div>
+            <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+              <br><br>
+              <div class="container1">
+                <?php include("./controllers/files/docs.php"); ?>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab"><br><br>...</div>
           </div>
         </div>
       </div>
