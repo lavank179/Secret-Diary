@@ -91,28 +91,46 @@ if (array_key_exists("id", $_SESSION)) {
               <div>
                 <ul class="list-inline">
                   <li class="list-inline-item btn btn-light">
-                    <h5 id="btnAZ" onclick="Gbtn(this);"> A - Z </h5>
+                    <h5 id="btnAZ">A - Z</h5>
                   </li>
                   <li class="list-inline-item btn btn-light ml-auto">
-                    <h5 id="btn1-10" onclick="Gbtn(this);"> 1 - 10... </h5>
-                  </li>
-                  <li class="list-inline-item btn btn-light">
-                    <h5> 1 - 10... </h5>
+                    <h5 id="btn1-10">1 - 10</h5>
                   </li>
                 </ul>
               </div>
               <div class="container1">
-                <?php include("./controllers/files/imgs.php"); ?>
+                <?php //include("./controllers/files/imgs.php"); 
+                ?>
               </div>
             </div>
             <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
               <br><br>
+              <div>
+                <ul class="list-inline">
+                  <li class="list-inline-item btn btn-light">
+                    <h5 id="btnAZ">A - Z</h5>
+                  </li>
+                  <li class="list-inline-item btn btn-light ml-auto">
+                    <h5 id="btn1-10">1 - 10</h5>
+                  </li>
+                </ul>
+              </div>
               <div class="container1">
                 <?php include("./controllers/files/vids.php"); ?>
               </div>
             </div>
             <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
               <br><br>
+              <div>
+                <ul class="list-inline">
+                  <li class="list-inline-item btn btn-light">
+                    <h5 id="btnAZ">A - Z</h5>
+                  </li>
+                  <li class="list-inline-item btn btn-light ml-auto">
+                    <h5 id="btn1-10">1 - 10</h5>
+                  </li>
+                </ul>
+              </div>
               <div class="container1">
                 <?php include("./controllers/files/docs.php"); ?>
               </div>
@@ -129,6 +147,7 @@ if (array_key_exists("id", $_SESSION)) {
 
 
 
+  <div id="sim"></div>
   <?php include("./headers/footer.php"); ?>
 
   <?php include('./headers/scripts.php'); ?>
